@@ -1,12 +1,11 @@
 vcpkg_check_linkage(ONLY_STATIC_LIBRARY)
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
-    REPO KarypisLab/GKlib
-    REF b1cb3bd7f6bf4da641af901c8d455c0f858c816f
-    SHA512 e906c7af8b40ce1c4c4ea43cbfca3e3970e5595686333ac9ac80c6cbc558feb0e833f530f034161927030edac5272234c6ac9cad5287cb6edab0c0671ba3644c
+    REPO mapret/GKlib
+    REF 804361cce8dbf2459863d329498dbe0f2d34d68e
+    SHA512 759d875de367db03fd8c91686008d0c4cb8e2de66e3664edeaad8dc271910ba58323572024e904ff50b1434b90635fd0f1f0252340a5dbd15ebe382ad9de54e2
     PATCHES
         build-fixes.patch
-        fix-mingw.patch
 )
 
 # Delete files that are workarounds for very old copies of msvc.

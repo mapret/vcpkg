@@ -67,12 +67,12 @@ index 8c8ac50..122e087 100644
  
  
 -#ifdef __MSC__ 
--  #include "ms_stdint.h"
--  #include "ms_inttypes.h"
+-  #include "gk_ms_stdint.h"
+-  #include "gk_ms_inttypes.h"
 +#ifdef __MSC__
 +  #include <stdint.h>
 +  #include <inttypes.h>
-   #include "ms_stat.h"
+   #include "gk_ms_stat.h"
    #include "win32/adapt.h"
  #else
 @@ -60,9 +60,4 @@ typedef ptrdiff_t ssize_t;
